@@ -1,0 +1,53 @@
+{
+  "name": "refactor-me",
+  "publisher": "phatstraws",
+  "displayName": "refactor-me",
+  "description": "ai code refactor",
+  "version": "0.0.9",
+  "engines": {
+    "vscode": "^1.66.2"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:refactorme.refactor"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "refactorme.refactor",
+        "title": "refactor me"
+      }
+    ],
+    "configuration": {
+      "title": "refactor me",
+      "properties": {
+        "refactorme.openaiApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "OpenAI API Key"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.3",
+    "@types/node": "18.x",
+    "@vscode/test-electron": "^2.3.6",
+    "eslint": "^8.52.0",
+    "glob": "^10.3.10",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/vscode": "^1.84.2",
+    "openai": "^4.20.0"
+  }
+}
