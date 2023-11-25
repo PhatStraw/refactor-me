@@ -3,7 +3,8 @@
   "publisher": "phatstraws",
   "displayName": "refactor-me",
   "description": "ai code refactor",
-  "version": "0.0.9",
+  "version": "0.0.10",
+  "repository": "https://github.com/PhatStraw/refactor-me/",
   "engines": {
     "vscode": "^1.66.2"
   },

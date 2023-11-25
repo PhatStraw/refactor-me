@@ -1,15 +1,29 @@
+const vscode = require('vscode');
 const assert = require('assert');
 
-// You can import and use all API from the 'vscode' module
-// as well as import your extension to test it
-const vscode = require('vscode');
-// const myExtension = require('../extension');
-
 suite('Extension Test Suite', () => {
-	vscode.window.showInformationMessage('Start all tests.');
+  vscode.window.showInformationMessage('Start all tests.');
 
-	test('Sample test', () => {
-		assert.strictEqual(-1, [1, 2, 3].indexOf(5));
-		assert.strictEqual(-1, [1, 2, 3].indexOf(0));
-	});
+  test('performRefactoring', async () => {
+    // Prepare a test document and selection
+    const document = await vscode.workspace.openTextDocument({
+      content: `const ex2 = (arr) => {
+		for (let index = 0; index < arr.length; index++) {
+		   const element = arr[index];
+			element += "hi"
+		}
+		 return arr;
+	   }`,
+      language: 'javascript'
+    });
+    const editor = await vscode.window.showTextDocument(document);
+    editor.selection = new vscode.Selection(0, 0, 0, 0); // Select the entire document
+
+    // Run the command
+    await vscode.commands.executeCommand('refactorme.refactor');
+
+    // Check the result
+    const refactoredCode = editor.document.getText();
+    assert.strictEqual(refactoredCode, 'const ex2 = (arr) => arr.map(element => `${element}hi`)');
+  });
 });
