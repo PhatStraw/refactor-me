@@ -1,4 +1,4 @@
-# OpenAI GPT-4 Code Refactor
+# VS COODE GPT-4 Code Refactor
 
 This Visual Studio Code extension leverages OpenAI's GPT-4 model to refactor your code. It provides an easy and quick way to improve and optimize your code with the power of AI.
 
@@ -23,8 +23,8 @@ This Visual Studio Code extension leverages OpenAI's GPT-4 model to refactor you
 
 1. Open the file you want to refactor in VSCode.
 2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the Command Palette.
-3. Type "Refactor with GPT-4" and select the command.
-4. The extension will send your code to OpenAI's GPT-4 model and replace your current code with the refactored version.
+3. Type "Refactor me" and select the command.
+4. The extension will send your selected code (or current file if nothing is selected) to OpenAI's GPT-4 model and replace your current code with the refactored version.
 
 ## Configuration
 
