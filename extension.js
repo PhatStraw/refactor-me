@@ -41,7 +41,7 @@ async function refactorWithIoenAI(code) {
             4. Adherence to Best Practices: Ensure your refactoring aligns with best practices suitable for a top-tier tech environment. This includes clean code principles, proper commenting, and efficient use of resources.
             5. Test for Production: Confirm that the refactored code is production-ready, meaning it's tested, reliable, and won't introduce new issues or dependencies.
             6. Check syntax and make sure the code is usable.
-            7. Do not remove any code, without replacing it. no brevity.
+            7. Never return unfinished code finish the code to the best of your ability.
             
             Please structure your response in the following JSON format:
             {
