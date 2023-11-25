@@ -1,4 +1,4 @@
-# VS COODE GPT-4 Code Refactor
+# VS CODE GPT-4 Code Refactor
 
 This Visual Studio Code extension leverages OpenAI's GPT-4 model to refactor your code. It provides an easy and quick way to improve and optimize your code with the power of AI.
 
