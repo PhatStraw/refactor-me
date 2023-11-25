@@ -29,7 +29,7 @@ This Visual Studio Code extension leverages OpenAI's GPT-4 model to refactor you
 ## Configuration
 
 - **API Key**: The extension requires an OpenAI API key to function. This key must be set in your system's environment variables as `OPENAI_API_KEY`.
-- **Model Configuration**: The extension uses the [text-davinci-004](file:///Users/kevinsims/Code/airefactor/README.md#48%2C52-48%2C52) model by default. You can modify the model used by editing the `extension.js` file if necessary.
+- **Model Configuration**: The extension uses the [gpt-4](file:///Users/kevinsims/Code/airefactor/README.md#48%2C52-48%2C52) model by default. You can modify the model used by editing the `extension.js` file if necessary.
 
 ## Troubleshooting
 
@@ -45,7 +45,7 @@ For support, please open an issue in the GitHub repository. Contributions are we
 
 ## License
 
-[Specify the License Here]
+MIT
 
 ## Acknowledgments
 
